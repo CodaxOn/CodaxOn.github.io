@@ -22,7 +22,6 @@
     </nav>
 
     <main id="home-view" class="page-view active">
-        
         <header class="hero" id="accueil">
             <div class="hero-content">
                 <h1>CREATIVE HUB</h1>
@@ -33,44 +32,69 @@
             </div>
         </header>
 
-        <section class="codex-intro" id="codex">
-            <div class="line"></div>
-            <p>Le <span>Projet Codex</span> est l'épicentre de mon exploration numérique : une fusion entre interface neuronale et design brutaliste.</p>
-        </section>
+<section class="codex-intro" id="codex">
+    <div class="intro-container">
+        <h2 class="intro-title">L'ÉCOSYSTÈME <span>CODEX</span></h2>
+        <div class="intro-text">
+            <p>Le <strong>Projet Codex</strong> est le projet le plus complexe et le plus ambitieux que j'ai jamais développé. Ce n'est pas une simple série de projet, c'est une <span>architecture globale</span> divisé en 5 modules interdépendants.</p>
+            <p>Chaque module est une expérience complète, mais ils sont tous connectés à une même base de données.</p>
+        </div>
+    </div>
+</section>
 
         <section class="hub-container">
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528');"></div>
                 <div class="content">
-                    <div class="info"><h2>NEBULA SYSTEM</h2><p>Interface spatiale et data-viz.</p></div>
+                    <div class="info">
+                        <h2>C</h2>
+                        <p>Coming Soon.</p>
+                        <button class="btn-strip" onclick="showProjectDetails('Nebula System', 'Une exploration de la data-viz spatiale utilisant Three.js.')">Voir Détails</button>
+                    </div>
                     <div class="number">01</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>CYBER ARMOR</h2><p>Design 3D et textures.</p></div>
+                    <div class="info">
+                        <h2>O</h2>
+                        <p>Coming Soon.</p>
+                        <button class="btn-strip" onclick="showProjectDetails('Cyber Armor', 'Conception d\'armures futuristes en rendu temps réel.')">Voir Détails</button>
+                    </div>
                     <div class="number">02</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>QUANTUM FLOW</h2><p>Interactions organiques.</p></div>
+                    <div class="info">
+                        <h2>D</h2>
+                        <p>Coming Soon.</p>
+                        <button class="btn-strip" onclick="showProjectDetails('Quantum Flow', 'Simulations de fluides interactives pour le web.')">Voir Détails</button>
+                    </div>
                     <div class="number">03</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>RETRO FUTURE</h2><p>Esthétique néon et luxe.</p></div>
+                    <div class="info">
+                        <h2>E</h2>
+                        <p>Coming Soon.</p>
+                        <button class="btn-strip" onclick="showProjectDetails('Retro Future', 'L\'esthétique des années 80 revisitée au goût du jour.')">Voir Détails</button>
+                    </div>
                     <div class="number">04</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472');"></div>
                 <div class="content">
-                    <div class="info"><h2>VOID ENGINE</h2><p>Moteur web expérimental.</p></div>
+                    <div class="info">
+                        <h2>X</h2>
+                        <p>Coming Soon.</p>
+                        <button class="btn-strip" onclick="showProjectDetails('Void Engine', 'Un moteur de rendu minimaliste pour performances extrêmes.')">Voir Détails</button>
+                    </div>
                     <div class="number">05</div>
                 </div>
             </div>
@@ -130,7 +154,7 @@
                 <div class="footer-col">
                     <h3>CONTACTEZ-MOI</h3>
                     <p>Entreprises, collaborateurs ou curieux en recherche d'innovation :</p>
-                    <a href="mailto:votre@email.com" class="link-underlined">Toutes les informations pour me contacter.</a>
+                    <a href="mailto:contact.codaxon@gmail.com" class="link-underlined">Toutes les informations pour me contacter.</a>
                     <p style="margin-top:20px; font-size:0.8rem; opacity:0.6;">Cliquez ici pour connaître mon dispositif d'accueil.</p>
                 </div>
                 <div class="footer-col events-col">
@@ -155,42 +179,65 @@
         <header class="projects-hero">
             <h1>MES RÉALISATIONS</h1>
             <p>Exploration • Code • Design</p>
-            <a href="https://github.com/TON-PSEUDO" target="_blank" class="btn-github">Voir mon GitHub</a>
+            <div class="btn-stack">
+              <a href="https://github.com/TON-PSEUDO" target="_blank" class="btn-github">Voir mon GitHub</a>
+             <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
+         </div>
         </header>
 
         <section class="hub-container">
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528');"></div>
                 <div class="content">
-                    <div class="info"><h2>NEBULA SYSTEM</h2><p>Interface spatiale et data-viz.</p></div>
+                    <div class="info">
+                        <h2>NEBULA SYSTEM</h2>
+                        <p>Interface spatiale et data-viz.</p>
+                        <a href="https://github.com/" target="_blank" class="btn-strip">Voir sur GitHub</a>
+                    </div>
                     <div class="number">01</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>CYBER ARMOR</h2><p>Design 3D et textures.</p></div>
+                    <div class="info">
+                        <h2>CYBER ARMOR</h2>
+                        <p>Design 3D et textures.</p>
+                        <a href="https://github.com/" target="_blank" class="btn-strip">Voir sur GitHub</a>
+                    </div>
                     <div class="number">02</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>QUANTUM FLOW</h2><p>Interactions organiques.</p></div>
+                    <div class="info">
+                        <h2>QUANTUM FLOW</h2>
+                        <p>Interactions organiques.</p>
+                        <a href="https://github.com/" target="_blank" class="btn-strip">Voir sur GitHub</a>
+                    </div>
                     <div class="number">03</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1470');"></div>
                 <div class="content">
-                    <div class="info"><h2>RETRO FUTURE</h2><p>Esthétique néon et luxe.</p></div>
+                    <div class="info">
+                        <h2>RETRO FUTURE</h2>
+                        <p>Esthétique néon et luxe.</p>
+                        <a href="https://github.com/" target="_blank" class="btn-strip">Voir sur GitHub</a>
+                    </div>
                     <div class="number">04</div>
                 </div>
             </div>
             <div class="project-strip">
                 <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472');"></div>
                 <div class="content">
-                    <div class="info"><h2>VOID ENGINE</h2><p>Moteur web expérimental.</p></div>
+                    <div class="info">
+                        <h2>VOID ENGINE</h2>
+                        <p>Moteur web expérimental.</p>
+                        <a href="https://github.com/" target="_blank" class="btn-strip">Voir sur GitHub</a>
+                    </div>
                     <div class="number">05</div>
                 </div>
             </div>
@@ -199,6 +246,18 @@
         <footer class="footer" style="text-align:center; padding: 80px;">
             <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
         </footer>
+    </main>
+
+    <main id="project-details-view" class="page-view" style="display:none;">
+        <section class="hero" style="min-height: 80vh;">
+            <div class="hero-content">
+                <h1 id="detail-title">TITRE PROJET</h1>
+                <p id="detail-description" style="max-width: 600px; margin: 20px auto; opacity: 0.7;">Description détaillée du projet ici...</p>
+                <div class="spacer-btn">
+                    <button onclick="showPage('home')" class="btn-hero">Fermer</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script>
@@ -212,7 +271,6 @@
             const target = document.getElementById(pageId + '-view');
             target.style.display = 'block';
             
-            // Petit délai pour l'animation
             setTimeout(() => target.classList.add('active'), 10);
 
             if (anchorId) {
@@ -223,6 +281,13 @@
             } else {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
+        }
+
+        // AJOUT : FONCTION POUR AFFICHER LES DÉTAILS
+        function showProjectDetails(title, description) {
+            document.getElementById('detail-title').innerText = title;
+            document.getElementById('detail-description').innerText = description;
+            showPage('project-details'); // Affiche la vue détails
         }
     </script>
 </body>
