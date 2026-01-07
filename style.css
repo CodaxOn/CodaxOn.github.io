@@ -1,4 +1,12 @@
 /* --- CONFIGURATION GLOBALE --- */
+/* À mettre tout en haut de style.css pour éviter les styles par défaut du navigateur */
+button, .btn-hero, .btn-github {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
 :root {
     --bg: #050505;
     --accent: #00f2ff;
@@ -316,4 +324,5 @@ nav {
 @media (max-width: 600px) {
     .footer-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
+
 }
