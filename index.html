@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex | Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CODEX</div>
+        <ul class="nav-links">
+            <li><a href="javascript:void(0)" onclick="showPage('home', 'accueil')">Accueil</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage('home', 'codex')">Codex</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage('home', 'a-propos')">À Propos</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage('projects')">Mes Projets</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage('home', 'contact')" class="nav-contact">Me Contacter</a></li>
+        </ul>
+    </nav>
+
+    <main id="home-view" class="page-view active">
+        
+        <header class="hero" id="accueil">
+            <div class="hero-content">
+                <h1>CREATIVE HUB</h1>
+                <p>Design • Développement • Imagination</p>
+                <div class="spacer-btn">
+                    <a href="javascript:void(0)" onclick="showPage('home', 'a-propos')" class="btn-hero">Ma Présentation</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="codex-intro" id="codex">
+            <div class="line"></div>
+            <p>Le <span>Projet Codex</span> est l'épicentre de mon exploration numérique : une fusion entre interface neuronale et design brutaliste.</p>
+        </section>
+
+        <section class="hub-container">
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528');"></div>
+                <div class="content">
+                    <div class="info"><h2>NEBULA SYSTEM</h2><p>Interface spatiale et data-viz.</p></div>
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>CYBER ARMOR</h2><p>Design 3D et textures.</p></div>
+                    <div class="number">02</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>QUANTUM FLOW</h2><p>Interactions organiques.</p></div>
+                    <div class="number">03</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>RETRO FUTURE</h2><p>Esthétique néon et luxe.</p></div>
+                    <div class="number">04</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472');"></div>
+                <div class="content">
+                    <div class="info"><h2>VOID ENGINE</h2><p>Moteur web expérimental.</p></div>
+                    <div class="number">05</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="a-propos">
+            <div class="about-grid">
+                <div class="about-header">
+                    <h2>PARCOURS & <br><span>AMBITIONS</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-block">
+                        <h3>Ma Motivation</h3>
+                        <p>Passionné par la convergence du code et de l'art, je cherche à transformer chaque pixel en une expérience émotionnelle unique.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3>Mes Objectifs</h3>
+                        <p>Devenir une référence dans le développement créatif et bâtir des écosystèmes digitaux qui redéfinissent notre navigation.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3>Mon Parcours</h3>
+                        <p>Déterminé et autodidacte, j'évolue dans l'architecture système et le frontend haut de gamme pour donner vie à mes visions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="main-footer">
+            <div class="social-bar">
+                <div class="social-content">
+                    <span>SUIVEZ-MOI :</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">CODEX</div>
+                    <p class="school-tag">CREATIVE TECHNOLOGY UNIT</p>
+                </div>
+                <div class="footer-col">
+                    <h3>INFOS PRATIQUES</h3>
+                    <ul>
+                        <li><a href="#">Demande de documentation</a></li>
+                        <li><a href="#">Candidater</a></li>
+                        <li><a href="#">Me recruter</a></li>
+                        <li><a href="#">Projets 2026</a></li>
+                        <li><a href="#">Orientation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACTEZ-MOI</h3>
+                    <p>Entreprises, collaborateurs ou curieux en recherche d'innovation :</p>
+                    <a href="mailto:votre@email.com" class="link-underlined">Toutes les informations pour me contacter.</a>
+                    <p style="margin-top:20px; font-size:0.8rem; opacity:0.6;">Cliquez ici pour connaître mon dispositif d'accueil.</p>
+                </div>
+                <div class="footer-col events-col">
+                    <div class="events-box">
+                        <h3>PROCHAINS LIVES</h3>
+                        <div class="event-item">
+                            <p><strong>Mercredi 07/01 en ligne - 18h</strong></p>
+                            <span><i class="far fa-clock"></i> 18h00 - 19h00 | <i class="fas fa-map-marker-alt"></i> Twitch</span>
+                        </div>
+                        <div class="event-item">
+                            <p><strong>Samedi 17/01 en présentiel - 9h30</strong></p>
+                            <span><i class="far fa-clock"></i> 09h30 - 16h30 | <i class="fas fa-map-marker-alt"></i> Paris Hub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright-bottom">&copy; 2026 CODEX HUB - TOUS DROITS RÉSERVÉS</p>
+        </footer>
+    </main>
+
+    <main id="projects-view" class="page-view" style="display:none;">
+        <header class="projects-hero">
+            <h1>MES RÉALISATIONS</h1>
+            <p>Exploration • Code • Design</p>
+            <a href="https://github.com/TON-PSEUDO" target="_blank" class="btn-github">Voir mon GitHub</a>
+        </header>
+
+        <section class="hub-container">
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528');"></div>
+                <div class="content">
+                    <div class="info"><h2>NEBULA SYSTEM</h2><p>Interface spatiale et data-viz.</p></div>
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>CYBER ARMOR</h2><p>Design 3D et textures.</p></div>
+                    <div class="number">02</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>QUANTUM FLOW</h2><p>Interactions organiques.</p></div>
+                    <div class="number">03</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1470');"></div>
+                <div class="content">
+                    <div class="info"><h2>RETRO FUTURE</h2><p>Esthétique néon et luxe.</p></div>
+                    <div class="number">04</div>
+                </div>
+            </div>
+            <div class="project-strip">
+                <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472');"></div>
+                <div class="content">
+                    <div class="info"><h2>VOID ENGINE</h2><p>Moteur web expérimental.</p></div>
+                    <div class="number">05</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" style="text-align:center; padding: 80px;">
+            <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
+        </footer>
+    </main>
+
+    <script>
+        function showPage(pageId, anchorId = null) {
+            const pages = document.querySelectorAll('.page-view');
+            pages.forEach(p => {
+                p.style.display = 'none';
+                p.classList.remove('active');
+            });
+
+            const target = document.getElementById(pageId + '-view');
+            target.style.display = 'block';
+            
+            // Petit délai pour l'animation
+            setTimeout(() => target.classList.add('active'), 10);
+
+            if (anchorId) {
+                setTimeout(() => {
+                    const el = document.getElementById(anchorId);
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
