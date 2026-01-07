@@ -27,20 +27,20 @@
                 <h1>CREATIVE HUB</h1>
                 <p>Design • Développement • Imagination</p>
                 <div class="spacer-btn">
-                    <a href="javascript:void(0)" onclick="showPage('home', 'a-propos')" class="btn-hero">Ma Présentation</a>
+                    <a href="javascript:void(0)" onclick="showPage('home', 'a-propos')" class="btn-hero">À Propos</a>
                 </div>
             </div>
         </header>
 
-<section class="codex-intro" id="codex">
-    <div class="intro-container">
-        <h2 class="intro-title">L'ÉCOSYSTÈME <span>CODEX</span></h2>
-        <div class="intro-text">
-            <p>Le <strong>Projet Codex</strong> est le projet le plus complexe et le plus ambitieux que j'ai jamais entrepris. Ce n'est pas une simple série de projet, c'est une <span>architecture globale</span> divisé en 5 modules interdépendants.</p>
-            <p>Chaque module est une expérience complète, mais ils sont tous connectés à une même base de données.</p>
-        </div>
-    </div>
-</section>
+        <section class="codex-intro" id="codex">
+            <div class="intro-container">
+                <h2 class="intro-title">L'ÉCOSYSTÈME <span>CODEX</span></h2>
+                <div class="intro-text">
+                    <p>Le <strong>Projet Codex</strong> est le projet le plus complexe et le plus ambitieux que j'ai jamais entrepris. Ce n'est pas une simple série de projet, c'est une <span>architecture globale</span> divisé en 5 modules interdépendants.</p>
+                    <p>Chaque module est une expérience complète, mais ils sont tous connectés à une même base de données.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="hub-container">
             <div class="project-strip">
@@ -181,8 +181,8 @@
             <p>Exploration • Code • Design</p>
             <div class="btn-stack">
               <a href="https://github.com/TON-PSEUDO" target="_blank" class="btn-github">Voir mon GitHub</a>
-             <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
-         </div>
+              <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
+          </div>
         </header>
 
         <section class="hub-container">
@@ -241,10 +241,62 @@
                     <div class="number">05</div>
                 </div>
             </div>
+
+            <div style="text-align:center; padding-bottom: 40px; margin-top: 80px;">
+                <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
+            </div>
         </section>
 
-        <footer class="footer" style="text-align:center; padding: 80px;">
-            <button onclick="showPage('home', 'accueil')" class="btn-hero">Retour Accueil</button>
+        <footer class="main-footer">
+            <div class="social-bar">
+                <div class="social-content">
+                    <span>SUIVEZ-MOI :</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">CODEX</div>
+                    <p class="school-tag">CREATIVE TECHNOLOGY UNIT</p>
+                </div>
+                <div class="footer-col">
+                    <h3>INFOS PRATIQUES</h3>
+                    <ul>
+                        <li><a href="#">Demande de documentation</a></li>
+                        <li><a href="#">Candidater</a></li>
+                        <li><a href="#">Me recruter</a></li>
+                        <li><a href="#">Projets 2026</a></li>
+                        <li><a href="#">Orientation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACTEZ-MOI</h3>
+                    <p>Entreprises, collaborateurs ou curieux en recherche d'innovation :</p>
+                    <a href="mailto:contact.codaxon@gmail.com" class="link-underlined">Toutes les informations pour me contacter.</a>
+                    <p style="margin-top:20px; font-size:0.8rem; opacity:0.6;">Cliquez ici pour connaître mon dispositif d'accueil.</p>
+                </div>
+                <div class="footer-col events-col">
+                    <div class="events-box">
+                        <h3>PROCHAINS LIVES</h3>
+                        <div class="event-item">
+                            <p><strong>Mercredi 07/01 en ligne - 18h</strong></p>
+                            <span><i class="far fa-clock"></i> 18h00 - 19h00 | <i class="fas fa-map-marker-alt"></i> Twitch</span>
+                        </div>
+                        <div class="event-item">
+                            <p><strong>Samedi 17/01 en présentiel - 9h30</strong></p>
+                            <span><i class="far fa-clock"></i> 09h30 - 16h30 | <i class="fas fa-map-marker-alt"></i> Paris Hub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright-bottom">&copy; 2026 CODEX HUB - TOUS DROITS RÉSERVÉS</p>
         </footer>
     </main>
 
@@ -283,15 +335,11 @@
             }
         }
 
-        // AJOUT : FONCTION POUR AFFICHER LES DÉTAILS
         function showProjectDetails(title, description) {
             document.getElementById('detail-title').innerText = title;
             document.getElementById('detail-description').innerText = description;
-            showPage('project-details'); // Affiche la vue détails
+            showPage('project-details');
         }
     </script>
 </body>
-
 </html>
-
-

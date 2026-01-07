@@ -28,6 +28,7 @@ button, .btn-hero, .btn-strip, .btn-github {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    text-decoration: none;
 }
 
 /* --- NAVIGATION --- */
@@ -35,7 +36,7 @@ nav {
     position: fixed; 
     top: 0; 
     width: 100%; 
-    padding: 25px 50px;
+    padding: 25px 10%; /* MODIFICATION : Décollé du bord pour l'alignement */
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -96,7 +97,8 @@ nav {
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    text-align: center; 
+    text-align: center;
+    padding: 0 10%;
 }
 
 .projects-hero { 
@@ -107,7 +109,12 @@ nav {
 .hero h1, .projects-hero h1 { 
     font-family: 'Syncopate'; 
     font-size: clamp(2rem, 8vw, 5rem); 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* MODIFICATION : Espace pour décoller le bouton Ma Présentation */
+.hero p {
+    margin-bottom: 45px; 
 }
 
 .btn-hero { 
@@ -130,7 +137,7 @@ nav {
 
 /* --- SECTION CODEX --- */
 .codex-intro {
-    padding: 100px 10%;
+    padding: 120px 10%;
     display: flex;
     justify-content: center;
     background: #050505;
@@ -196,8 +203,10 @@ nav {
 
 .info h2 { font-family: 'Syncopate'; font-size: 2rem; }
 
+/* MODIFICATION : Espace pour décoller de Coming Soon */
 .btn-strip {
-    margin-top: 15px; padding: 10px 25px;
+    margin-top: 25px !important; 
+    padding: 10px 25px;
     background: rgba(255,255,255,0.1); 
     border: 1px solid var(--accent) !important;
     color: var(--accent); font-size: 0.7rem; text-transform: uppercase;
@@ -210,7 +219,7 @@ nav {
 
 .number { font-family: 'Syncopate'; font-size: 4rem; opacity: 0.1; }
 
-/* --- SECTION À PROPOS (VERTICALE) --- */
+/* --- SECTION À PROPOS --- */
 .about-section {
     padding: 100px 10%;
     background: #050505;
@@ -227,7 +236,7 @@ nav {
 .about-header h2 {
     font-family: 'Syncopate';
     font-size: clamp(1.8rem, 5vw, 3rem);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about-header h2 span { color: var(--accent); }
@@ -241,6 +250,7 @@ nav {
 .about-block {
     border-left: 3px solid var(--accent);
     padding-left: 25px;
+    margin-bottom: 50px; /* MODIFICATION : Espace entre chaque bloc de texte */
 }
 
 .about-block h3 {
@@ -258,11 +268,15 @@ nav {
 }
 
 /* --- PAGE PROJETS & BOUTONS --- */
+.projects-hero p {
+    margin-bottom: 60px; /* MODIFICATION : Espace pour décoller les boutons du texte */
+}
+
 .btn-stack {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* MODIFICATION : Espace entre les deux boutons (GitHub et Retour) */
 }
 
 .btn-github { 
@@ -278,6 +292,20 @@ nav {
 }
 
 .btn-github:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(255,255,255,0.1); }
+
+/* --- PAGE DÉTAILS PROJET --- */
+#project-details-view {
+    background: #080808;
+    min-height: 100vh;
+    padding: 150px 10% 80px; /* MODIFICATION : Empêche le titre d'être collé au menu */
+}
+
+#detail-title {
+    font-family: 'Syncopate';
+    color: var(--accent);
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 30px;
+}
 
 /* --- FOOTER --- */
 .main-footer { background: #000; border-top: 1px solid #111; margin-top: 50px; }
@@ -305,8 +333,7 @@ nav {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    nav { padding: 20px; }
-    .nav-links { display: none; } /* Simplification mobile */
-    .about-section { padding: 80px 5%; }
+    nav { padding: 20px 5%; }
+    .hero, .about-section, .projects-hero { padding-left: 5%; padding-right: 5%; }
     .footer-grid { grid-template-columns: 1fr; }
 }
